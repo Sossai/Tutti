@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="br.com.dev42.tutti.activities.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:layout_height="@dimen/tollbar"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@drawable/backmenu">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:contentDescription="Logo"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/logo_toolbar"/>
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivTopoEscala"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_below="@id/tb_main"
+        android:background="@color/colorContrasteEscala"
+        android:src="@drawable/nota_exemplo"
+        android:visibility="gone"/>
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/white"
+        android:layout_below="@id/tb_main">
+    </android.support.v4.view.ViewPager>
+
+    <TextView
+        android:id="@+id/count_sound_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0/0"
+        android:textColor="@color/colorPreto"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignTop="@id/vp_main"/>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vp_main"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorContrastesEscuro">
+
+            <Button
+                android:id="@+id/btn_abc"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="A B C"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorNomeEscala2"
+                android:background="@drawable/btn_escala_stroke"/>
+            <Button
+                android:id="@+id/test_som"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="TESTE SOM"
+                android:textSize="10sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorNomeEscala2"
+                android:background="@drawable/btn_escala_stroke"/>
+
+            <ListView
+                android:id="@+id/lv_escala_opcoes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorNomeEscala2"
+                android:dividerHeight="1dp">
+
+            </ListView>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBordaOpcoes">
+        </View>
+        <GridView
+            android:id="@+id/gv_escalas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorContrasteEscala"
+            android:numColumns="4"
+            android:paddingRight="16dp"
+            android:paddingLeft="8dp">
+        </GridView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

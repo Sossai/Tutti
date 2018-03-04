@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBranco">
+
+        <LinearLayout
+            android:id="@+id/grou_btn_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="S"
+                android:layout_weight="1"
+                android:background="@drawable/btn_campo_harmonico1"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="A"
+                android:layout_weight="1"
+                android:background="@drawable/btn_campo_harmonico1"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="T"
+                android:layout_weight="1"
+                android:background="@drawable/btn_campo_harmonico1"/>
+            <Button
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="B"
+                android:layout_weight="1"
+                android:background="@drawable/btn_campo_harmonico1"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_tela_cadencia"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_toRightOf="@id/grou_btn_cad"
+            android:src="@drawable/opcao7cadencia1"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorContrastesEscuro">#e5e2d7</color>
+    <color name="colorEscala1">#c9cfe0</color>
+    <color name="colorEscala2">#e3e0e5</color>
+    <color name="colorContrasteEscala">#f2f1ed</color>
+    <color name="colorNomeEscala1">#ffffff</color>
+    <color name="colorNomeEscala2">#15164d</color>
+    <color name="colorTextOpcoesEscala">#6d6d6c</color>
+    <color name="colorBordaOpcoes">#c0bab0</color>
+    <color name="colorAzulClaro">#0bbdff</color>
+    <color name="colorPreto">#000000</color>
+    <color name="colorBranco">#ffffff</color>
+    <color name="colorRoxo">#302053</color>
+    <color name="colorBtn1Triade">#e5e3d7</color>
+    <color name="colorBtn2Triade">#f4f4ef</color>
+
+    <color name="colorBejeEscuro">#c0bab0</color>
+    <color name="colorBejeClaro">#f4f4ef</color>
+    <color name="colorAzulEscuro">#15164d</color>
+
+</resources>

@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <ImageView
+        android:id="@+id/iv_tela_intervalo"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:src="@drawable/opcao4intervalo1atela1">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@color/colorRoxo">
+
+        <Button
+            android:id="@+id/btn_intervalo_principal"
+            android:layout_width="36dp"
+            android:layout_height="25dp"
+            android:text="m"
+            android:textSize="15sp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_escala_stroke"
+            android:layout_marginRight="11dp"
+            android:textAllCaps="false"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBejeEscuro"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+        </View>
+
+        <Button
+            android:id="@+id/btn_tela_intervalo_1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="UN."
+            android:textSize="15sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBejeEscuro"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+        </View>
+
+        <Button
+            android:id="@+id/btn_tela_intervalo_2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="2M"
+            android:textSize="15sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBejeEscuro"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+        </View>
+        <Button
+            android:id="@+id/btn_tela_intervalo_3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="3M"
+            android:textSize="15sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBejeEscuro"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="11dp">
+        </View>
+        <Button
+            android:id="@+id/btn_tela_intervalo_4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="4J"
+            android:textSize="15sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorBejeEscuro"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="9dp">
+        </View>
+    </LinearLayout>
+</LinearLayout>

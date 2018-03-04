@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <ImageView
+        android:id="@+id/iv_tela_tritono"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:src="@drawable/opcao8tritono1p">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/barra_tritono_primario"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="visible">
+        <Button
+            android:id="@+id/btn_tela_tritono_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Primário"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_2"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="4 aum."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_3"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="6M"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico2"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_4"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="5 dim."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_5"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="3m"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorPreto"
+            android:background="@drawable/btn_campo_harmonico2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barra_tritono_secundario"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_tela_tritono_1_secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Secundário"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_2_secundario"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="5 dim."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_3_secundario"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="3M"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico2"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_4_secundario"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="4 aum."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_5_secundario"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="6m"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorPreto"
+            android:background="@drawable/btn_campo_harmonico2"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/barra_tritono_sem"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone">
+        <Button
+            android:id="@+id/btn_tela_tritono_1_sem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_2_sem"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="4 aum."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto"/>
+        <Button
+            android:id="@+id/btn_tela_tritono_3_sem"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="6m"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico2"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_4_sem"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="5 dim."
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_tritono_5_sem"
+            android:layout_width="65dp"
+            android:layout_height="match_parent"
+            android:text="3M"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorPreto"
+            android:background="@drawable/btn_campo_harmonico2"/>
+    </LinearLayout>
+</LinearLayout>

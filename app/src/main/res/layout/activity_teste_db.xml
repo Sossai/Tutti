@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/colorBranco"
+    tools:context="br.com.dev42.tutti.activities.TesteDbActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/bt_insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INSERT ALL"/>
+
+    <Button
+        android:id="@+id/bt_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE ALL"/>
+
+    <Button
+        android:id="@+id/bt_lista_db"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LISTA ALL"/>
+
+    <TextView
+        android:id="@+id/tv_tst_font"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="50sp"
+        android:textColor="@color/colorPreto"
+        android:text="abc"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+    
+    <ListView
+        android:id="@+id/lista_db_ts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <ImageView
+        android:id="@+id/iv_tela_triade"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:src="@drawable/opcao5triade1atelaa">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_tela_triade_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Posição Fundamental"
+            android:textAllCaps="false"
+            android:textSize="14sp"
+            android:background="@color/colorRoxo"
+            android:textColor="@color/colorBranco"/>
+        <Button
+            android:id="@+id/btn_tela_triade_2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="A"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_campo_harmonico1"
+            android:textColor="@color/colorPreto"/>
+        <Button
+            android:id="@+id/btn_tela_triade_3"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="M"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_tonalidade1"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_triade_4"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="m"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_tonalidade2"
+            android:textColor="@color/colorPreto" />
+        <Button
+            android:id="@+id/btn_tela_triade_5"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:text="d"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:textColor="@color/colorPreto"
+            android:background="@drawable/btn_campo_harmonico2"/>
+    </LinearLayout>
+</LinearLayout>

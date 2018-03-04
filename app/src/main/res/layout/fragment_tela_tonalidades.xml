@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <ImageView
+        android:id="@+id/iv_tela_tonalidades"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_weight="1"
+        android:src="@drawable/opcao1tonalidade1">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_tela_tonalidade1"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="menor"
+            android:textAllCaps="false"
+            android:textSize="15sp"
+            android:background="@drawable/btn_tonalidade1"
+            android:textColor="@color/colorBranco"/>
+        <Button
+            android:id="@+id/btn_tela_tonalidade2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="MAIOR"
+            android:textSize="15sp"
+            android:background="@drawable/btn_tonalidade2"
+            android:textColor="@color/colorRoxo" />
+    </LinearLayout>
+</LinearLayout>

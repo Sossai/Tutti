@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android_ex="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:gravity="center_horizontal"
+    android:background="@color/colorBranco"
+    tools:context="br.com.dev42.tutti.fragments.TelaEscalasFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_gravity="center|bottom">
+
+        <ImageView
+            android:id="@+id/barra_roxa_back"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorRoxo"
+            android:layout_alignParentBottom="true"/>
+
+        <ImageView
+            android:id="@+id/iv_tela_escala"
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:layout_centerInParent="true"
+            android:background="@color/colorBranco"
+            android:layout_above="@id/barra_roxa_back"
+            android:src="@drawable/opcao2escala1tela1h">
+        </ImageView>
+
+        <Button
+            android:id="@+id/btn_tipo_escala"
+            android:layout_width="wrap_content"
+            android:layout_height="21dp"
+            android:text="Natural"
+            android:textAllCaps="false"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="false"
+            android:layout_alignBottom="@id/iv_tela_escala"
+            android:background="@drawable/btn_redondo_tipos_escalas"/>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_maior_tela1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_maior"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_maior_tela2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_maior_tela2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_natural"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_natural"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_natural_tela2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_natural_tela2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_melodica"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_melodica"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_melodica_tela2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_melodica_tela2"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_harmonica"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_harmonica"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_escalas_barra_menor_harmonica_tela2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@id/iv_tela_escala"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                layout="@layout/barra_tela_escalas_menor_harmonica_tela2"/>
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
